@@ -1,4 +1,61 @@
-/* Created by: Mr. Coxall
-* Created on: Sep 2020
+/* Created by: Kyle Matthew Magnaye
+* Created on: May 2025
 * This file contains the CSS for index.html
 */
+
+body {
+  background: lightblue;
+}
+
+.mdl-layout__header-row {
+  justify-content: center;
+  padding: 0;
+}
+
+.mdl-layout__content {
+  padding: 15pt;
+}
+
+.mdl-textfield__error {
+  color: lightgreen;
+}
+
+.page-content {
+  padding: 20px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.25rem;
+  color: rgb(186, 34, 34);
+  text-align: center;
+}
+
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-section label {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+#result-output {
+  color: darkgreen;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.image-section img {
+  height: 250px;
+  max-width: 100%;
+}
