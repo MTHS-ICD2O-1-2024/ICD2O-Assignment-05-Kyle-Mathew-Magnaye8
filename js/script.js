@@ -4,6 +4,8 @@
 // Created on: May 2025
 // This file contains the JS logic for reversing numbers
 
+"use strict"
+
 function calculateNumber() {
     // Get input value from the text box and convert it to an integer
     let number = parseInt(
