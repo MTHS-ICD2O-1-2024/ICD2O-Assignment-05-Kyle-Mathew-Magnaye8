@@ -2,38 +2,32 @@
 //
 // Created by: Kyle Matthew Magnaye
 // Created on: May 2025
-// This file contains the JS functions for index.html
+// This file contains the JS logic for reversing numbers
 
 function calculateNumber() {
-  let positiveIntegerNumber1 = parseInt(
-      document.getElementById("positive-integer-number-1").value
-  );
-  let positiveIntegerNumber2 = parseInt(
-      document.getElementById("positive-integer-number-2").value
-  );
+    // Get input value from the text box and convert it to an integer
+    let number = parseInt(
+        document.getElementById("positive-integer-number-1").value
+    );
 
-  // Input validation
-  if (
-      isNaN(positiveIntegerNumber1) ||
-      isNaN(positiveIntegerNumber2) ||
-      positiveIntegerNumber1 < 0 ||
-      positiveIntegerNumber2 < 0
-  ) {
-      document.getElementById("result-output").innerHTML =
-          "Please enter valid positive integers.";
-      return;
-  }
+    // Check if the input is valid
+    if (isNaN(number) || number < 1) {
+        document.getElementById("result-output").innerHTML =
+            "❗ Please enter a valid positive number greater than 0.";
+        return;
+    }
 
-  let result = 0;
-  let counter = 0;
+    // Reverse the digits of the number
+    let reversed = 0;
+    let original = number; // Save the original number for display
 
-  while (counter < positiveIntegerNumber2) {
-      result += positiveIntegerNumber1;
-      counter++;
-  }
+    while (number > 0) {
+        reversed = reversed * 10 + (number % 10);
+        number = Math.floor(number / 10);
+    }
 
-  // Show result in the webpage
-  document.getElementById(
-      "result-output"
-  ).innerHTML = `${positiveIntegerNumber1} × ${positiveIntegerNumber2} = <strong>${result}</strong>`;
+    // Display result
+    document.getElementById(
+        "result-output"
+    ).innerHTML = `<strong>Reversed Result:</strong><br>${original} → ${reversed}`;
 }

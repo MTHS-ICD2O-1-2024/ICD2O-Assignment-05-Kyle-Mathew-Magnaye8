@@ -32,24 +32,23 @@
       <div class="page-content">
         <div class="content-wrapper">
           <div class="form-section">
-            <h5>Place your positive numbers:</h5>
+            <h5>Enter a positive number to reverse in loop:</h5>
 
-            <label for="positive-integer-number-1">What's</label><br />
-            <input type="text" id="positive-integer-number-1" name="positive-integer-number-1" /><br /><br />
-
-            <label for="positive-integer-number-2">X</label><br />
-            <input type="text" id="positive-integer-number-2" name="positive-integer-number-2" /><br /><br />
+            <label for="positive-integer-number-1">Number:</label><br />
+            <input type="number" id="positive-integer-number-1" name="positive-integer-number-1" min="1"
+              placeholder="e.g. 123" /><br /><br />
 
             <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
               onclick="calculateNumber()" type="button">
-              CALCULATE
+              SHOW REVERSED
             </button>
 
-            <div id="result-output"></div>
+            <div id="result-output" style="margin-top: 20px"></div>
           </div>
 
           <div class="image-section">
-            <img src="./images/counting-backwards-to-exercises-worksheet-kids-103205379.webp" alt="reverse a numbers image" />
+            <img src="./images/counting-backwards-to-exercises-worksheet-kids-103205379.webp"
+              alt="reverse a numbers image" />
           </div>
         </div>
       </div>
